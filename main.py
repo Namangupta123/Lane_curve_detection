@@ -59,7 +59,7 @@ def region_of_interest(image):
     return masked_image
 
 
-image = cv2.imread('/Users/namangupta/Desktop/Pycharm/Lane/Straight.jpeg')
+image = cv2.imread('Straight.jpeg')
 lane_image = np.copy(image)  # we will copy the org image in new variable
 canny_image = canny(lane_image)     # Applying Canny image.
 cropped_image = region_of_interest(canny_image)
